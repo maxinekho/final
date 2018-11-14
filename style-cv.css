@@ -1,0 +1,50 @@
+body {
+    margin-top: 10em;
+    margin-left: 10em;
+    margin-right: 10em;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.3em;
+}
+.container {
+    max-width: 2440px;
+    margin: 0 auto;
+    display: inline grid;
+    grid-column-gap: 3px;
+    grid-row-gap: 10px;
+}
+
+div.column-one {
+    float: left;
+    width: 25eem;
+}
+div.column-two {
+    margin-left: 25em;
+    max-width: 30eem;
+}
+div.row{
+    grid-row-start: 2;
+}
+
+.column-two a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.column-two a:hover {
+    color: dodgerblue;
+}
+
+@media screen and (max-width:375px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-one {
+        width: 100%;
+    }
+
+    .column-two {
+        width: 100%;
+    }
+}
