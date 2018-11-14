@@ -95,7 +95,7 @@ a:hover {
 .img-project {
     display: flex;
     box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3);
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .container__project-text {
@@ -175,7 +175,7 @@ footer > div{
     padding-right: 70px;
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 576px) and (orientation: portrait) {
+@media (max-width: 800px) {
     body{
         margin: 1em;
     }
@@ -209,7 +209,7 @@ footer > div{
     }
 
     .two-col {
-        display: block;
+        grid-template-columns: 1fr;
     }
 
     .container-projects {
