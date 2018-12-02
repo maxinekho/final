@@ -1,5 +1,5 @@
 body {
-    margin-top: 10em;
+    margin-top: 5em;
     margin-left: 10em;
     margin-right: 10em;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -15,14 +15,13 @@ body {
 
 div.column-one {
     float: left;
-    width: 25eem;
+    max-width: 25em;
 }
+
 div.column-two {
     margin-left: 25em;
-    max-width: 30eem;
-}
-div.row{
-    grid-row-start: 2;
+    max-width: 25em;
+    min-width: 15em;
 }
 
 .column-two a {
@@ -34,17 +33,26 @@ div.row{
     color: dodgerblue;
 }
 
-@media screen and (max-width:375px){
-    .container {
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width:800px){
+    body {
+        font-size: 1em;
+    }
+
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
     }
 
     .column-one {
         width: 100%;
+        margin-left: 1em;
+        margin-bottom: 2em;
     }
 
-    .column-two {
+    div.column-two {
+        margin-left: 1em;
         width: 100%;
     }
 }

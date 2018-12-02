@@ -87,9 +87,59 @@ a:hover {
     color: dodgerblue;
 }
 
+a.view-project-button:hover {
+    text-decoration: underline;
+    display: block;
+}
+
 .container__project-image {
     width: 100%;
     /*flex-shrink: 0;*/
+}
+
+/*Link Properties*/
+
+.view__link{
+    --smLinkPadding: 10px 15px;
+    --smLinkLineWeight: 2px;
+    --smLinkLineColor: dodgerblue;
+    --smLinkTextColorHover: dodgerblue;
+    display: inline-flex;
+    color: dodgerblue;
+    position: relative;
+    overflow: hidden;
+}
+
+a.view__link{
+    text-decoration: none;
+}
+
+.view__link::after{
+    transform: translate3d(-100%, 0, 0);
+    transition: transform .2s ease-in;
+}
+
+.view__link:hover::after{
+    transform: translate3d(0, 0, 0);
+}
+
+/*Link Padding*/
+
+.view__link-padding{
+    --uismLinkLineWeight: var(--smLinkLineWeight, 1px);
+    --uismLinkLineColor: var(--smLinkLineColor, #000);
+    padding-bottom: var(--uismLinkLineWeight);
+    position: relative;
+}
+
+.view__link-padding::after{
+    content: "";
+    width: 7em;
+    height: var(--uismLinkLineWeight);
+    background-color: var(--uismLinkLineColor);
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .img-project {
@@ -122,10 +172,10 @@ h1 {
 }
 
 h3 {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
-    line-height: 1em;
+    line-height: 0.9em;
 }
 
 p {
