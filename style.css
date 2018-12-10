@@ -6,14 +6,6 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-:root {
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-}
-
 body {
     margin-left: 8em;
     margin-right: 8em;
@@ -62,9 +54,6 @@ body {
     font-size: medium;
     padding: 0 5em;
     margin-left: 2.5em;
-    /*grid-row-start: 1;*/
-    /*grid-column-start: 2;*/
-    /*width: 100%;*/
 }
 
 .container-main {
@@ -74,6 +63,36 @@ body {
 .two-col {
     display: grid;
     grid-template-columns: 7fr 5fr;
+}
+
+.animated {
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
+    50% {-webkit-transform: translateY(-20px);}
+}
+
+@keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+#scroll-down-arrow {
+    text-align: center;
 }
 
 a {
@@ -188,8 +207,8 @@ img.img-project {
 }
 
 h1 {
-    line-height: 1em;
-    font-size: 3em;
+    line-height: 1.1em;
+    font-size: 2.8em;
 }
 
 h3 {
@@ -223,13 +242,6 @@ a.active-nav {
     font-weight: 700;
 }
 
-/*a.inactive-nav {*/
-    /*font-weight: 500;*/
-    /*background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #333333 50%) -0% 0;*/
-    /*background-size: 200% auto;*/
-    /*transition: background-position 0.3s ease-out;*/
-/*}*/
-
 a.inactive-nav:hover {
     font-weight: 700;
 }
@@ -237,8 +249,45 @@ a.inactive-nav:hover {
 footer > div {
     display: inline-block;
     justify-items: center;
-    margin-bottom: 3em;
-    padding-right: 3em;
+    margin-bottom: 2em;
+}
+
+div.sm-links {
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.sm-links > a {
+    padding: 0 1em;
+    color: #333333;
+    vertical-align: center;
+}
+
+.sm-links > a:hover {
+    opacity: 0.7;
+}
+
+.message {
+    display: block;
+    text-align: center;
+    color: #333333;
+}
+
+.message > a {
+    color: #333333;
+    font-weight: 600;
+}
+
+.message > a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    opacity: 0.5;
 }
 
 @media (max-width: 800px) {
@@ -310,5 +359,6 @@ footer > div {
     footer.sm-links {
         display: inline-flex;
         padding: 0 1em;
+        justify-content: center;
     }
 }

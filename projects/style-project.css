@@ -173,6 +173,7 @@ a.black:hover {
 
 a.blue {
     color: dodgerblue;
+    text-decoration: none;
 }
 
 a.active-nav {
@@ -455,15 +456,48 @@ a.view__link{
 footer > div {
     display: inline-block;
     justify-items: center;
-    margin-bottom: 3em;
-    padding-right: 3em;
+    margin-bottom: 1em;
 }
 
-div.sm-link {
-    padding-left: 2em;
-    justify-items: center;
-    align-self: center;
+div.sm-links {
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
 }
+
+.sm-links > a {
+    padding: 0 1em;
+    color: #333333;
+    vertical-align: center;
+}
+
+.sm-links > a:hover {
+    opacity: 0.7;
+}
+
+.message {
+    display: block;
+    text-align: center;
+    color: #333333;
+}
+
+.message > a {
+    color: #333333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.message > a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    opacity: 0.5;
+}
+
 
 @media (max-width: 800px) {
     body {
@@ -511,7 +545,6 @@ div.sm-link {
     }
 
     footer.sm-links {
-        display: inline-flex;
         padding: 0 1em;
     }
 
