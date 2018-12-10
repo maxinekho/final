@@ -6,6 +6,7 @@ html {
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -172,8 +173,6 @@ a.black:hover {
 
 a.blue {
     color: dodgerblue;
-    font-weight: bolder;
-    text-decoration: none;
 }
 
 a.active-nav {
@@ -239,9 +238,7 @@ video {
     }
 }
 
-
-
-/*Image Stuff*/
+/*Image*/
 .zoomImages {
     border-radius: 5px;
     cursor: pointer;
@@ -252,7 +249,7 @@ video {
     opacity: 0.7;
 }
 
-/* The Modal (background) */
+/* The Modal */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -275,7 +272,7 @@ video {
     max-width: 1000px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/* Caption of Modal Image (Alt Text) */
 #caption {
     margin: auto;
     display: block;
@@ -322,6 +319,36 @@ video {
     }
 }
 
+/* Tooltip container */
+.tooltip {
+    top: 0;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+    top: 9em;
+    right: 30px;
+    visibility: hidden;
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltip-text {
+    opacity: 0;
+    transition: opacity 1s;
+}
 
 #project-logo {
     max-width: 10em;
@@ -398,6 +425,31 @@ a.view__link{
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 99;
+    outline: none;
+    color: dodgerblue;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    background-color: white;
+    border: 2px solid dodgerblue;
+    border-radius: 100%;
+    padding: 0.85em 1em;
+}
+
+#backToTop:hover {
+    /*opacity: 0.7;*/
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    color: white;
 }
 
 footer > div {

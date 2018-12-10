@@ -27,19 +27,15 @@ for(let i = 0; i < rippleElements.length; i++) {
 }
 
 // Image Modal
-// Get the modal
 let modal = document.getElementById('zoomModal');
 let images = document.getElementsByClassName('zoomImages');
-// the image in the modal
 let modalImg = document.getElementById("img01");
-// and the caption in the modal
 let captionText = document.getElementById("caption");
 
-// Go through all of the images with our custom class
+// Go through all of the images with class zoomImages
 for (let i = 0; i < images.length; i++) {
     let img = images[i];
     console.log('working!');
-    // and attach our click listener for this image.
     img.onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
@@ -54,3 +50,21 @@ let span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
     modal.style.display = "none";
 };
+
+// Back to Top Link
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {userScroll()};
+
+function userScroll() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("backToTop").style.display = "block";
+    } else {
+        document.getElementById("backToTop").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function scrollUp() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

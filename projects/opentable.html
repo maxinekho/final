@@ -38,7 +38,10 @@
     <div id="zoomModal" class="modal">
 
         <!-- The Close Button -->
-        <span class="close">&times;</span>
+        <div class="tooltip">Hover over me
+            <span class="close">&times;</span>
+            <span class="tooltip-text">Close</span>
+        </div>
 
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="img01">
@@ -76,7 +79,7 @@
                     App Critique<br>
                     Wireframing (using Sketch)<br>
                     Flowcharting and diagramming<br>
-                    Prototyping (using InVision)</h4>
+                    <a href="#prototype-opentable" class="blue">Prototyping (using InVision)</a></h4>
                 </div>
         </div>
 
@@ -223,11 +226,14 @@
         A list of restaurants participating in OpenTable Tab cannot be easily accessed from the landing page of the mobile app because <p class="highlight-open-table">the “Pay with Mobile” card is positioned lower in order.</p> The Tab logo also does not stand out among the cards.<br><br>
 
 
-
-
         <div class="center">
-            <a class="btn__prototype btnRippleEffect" type="button" href="https://projects.invisionapp.com/share/DGGOCCJ358R#/screens" target="_blank">
+            <a class="btn__prototype btnRippleEffect" id="prototype-opentable" type="button" href="https://projects.invisionapp.com/share/DGGOCCJ358R#/screens" target="_blank">
                 View Prototype
+            </a><br><br><br><br>
+        </div>
+        <div class="center">
+            <a class="btn__prototype btnRippleEffect" type="button">
+                Demo: Ripple Effect
             </a><br><br><br><br>
         </div>
 
@@ -262,6 +268,9 @@
         </div>
     </div>
     <br><br>
+
+    <!--Back to Top Link-->
+    <button onclick="scrollUp()" id="backToTop" title="Go to top">&#8593;</button>
 
     <!--Footer-->
     <br><br><br><br><br>

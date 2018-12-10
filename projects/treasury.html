@@ -39,7 +39,10 @@
     <div id="zoomModal" class="modal">
 
         <!-- The Close Button -->
-        <span class="close">&times;</span>
+        <div class="tooltip">Hover over me
+            <span class="close">&times;</span>
+            <span class="tooltip-text">Close</span>
+        </div>
 
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="img01">
@@ -75,7 +78,7 @@
                     Visual Design<br>
                     Wireframing (using Sketch)<br>
                     Flowcharting and diagramming<br>
-                    Prototyping (using HTML/CSS and InVision)<br>
+                    <a href= "#prototype-treasury" class="blue">Prototyping (using HTML/CSS and InVision)<br></a>
                     User Testing<br></h4>
             </div>
         </div><br><br>
@@ -142,7 +145,7 @@
         <img src="../images/project-treasury/view-bond.png" class="zoomImages">
 
         <div class="center">
-            <a class="btn__prototype btnRippleEffect" type="button" href="https://invis.io/RSPI7D7Y5W8" target="_blank">
+            <a class="btn__prototype btnRippleEffect" id="prototype-treasury" type="button" href="https://invis.io/RSPI7D7Y5W8" target="_blank">
                 View Prototype
             </a><br><br><br><br>
         </div>
@@ -240,6 +243,9 @@
         </div>
     </div>
     <br><br>
+
+    <!--Back to Top Link-->
+    <button onclick="scrollUp()" id="backToTop" title="Go to top">&#8593;</button>
 
         <!--Footer-->
         <br><br><br><br><br>
