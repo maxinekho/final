@@ -3,33 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Treasury Portal | MAXINE KHO</title>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/shrimp.ico" type="img/ico">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="style-project.css">
+
+    <title>MAXINE KHO | Treasury Portal</title>
 </head>
 <body>
-    <div class="video">
-        <iframe src="https://player.vimeo.com/video/287558812" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen             mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
 
-    <div id="video-container">
-        <!-- Video -->
-        <video id="video" width="640" height="365">
-            <source src="videos/mikethefrog.webm" type="video/webm">
-            <source src="videos/mikethefrog.ogv" type="video/ogv">
-            <source src="videos/mikethefrog.mp4" type="video/mp4">
-            <p>
-                Your browser doesn't support HTML5 video.
-                <a href="videos/mikethefrog.mp4">Download</a> the video instead.
-            </p>
-        </video>
-        <!-- Video Controls -->
-        <div id="video-controls">
-            <button type="button" id="play-pause">Play</button>
-            <input type="range" id="seek-bar" value="0">
-            <button type="button" id="mute">Mute</button>
-            <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-            <button type="button" id="full-screen">Full-Screen</button>
+    <!--Logo-->
+    <div class="logo">
+        <a class="black" href="/">Maxine Kho</a>
+    </div>
+
+    <!--Navigation-->
+    <nav class="top-nav">
+        <a class="black inactive-nav" href="../index.html">MAXINE KHO</a>
+        <a class="black inactive-nav" href="../cv/cv.html" target="_blank">RESUME</a>
+        <a class="black inactive-nav" href="mailto:maxinekho@nyu.edu">CONTACT</a>
+    </nav>
+    <br><br><br><br><br>
+
+    <!--Progress Bar-->
+    <div class="progress-indicator">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
         </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="zoomModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
+    <!--Title + Content-->
+    <div class="container">
+        <h1><strong>Designing an enterprise system with high data density 📊</strong></h1>
+        <br>
+        <!--Project Intro + Summary-->
+        <div class="two-col">
+            <!--Project Intro-->
+            <div class="intro">
+                <p>NYU has ongoing, large-scale capital projects to support the needs and academic mission of the university. NYU uses tax free bond money to reimburse money spent on building maintenance and construction projects.
+
+                    Tax exempt bonds have many regulations on exactly how the Bond money can be used. To avoid regulation violations, Treasury users currently work in a legacy system to manage bonds and generate reports and requests.</p>
+
+                <h5>What does this legacy process look like?</h5>
+            </div>
+            <!--Project Summary-->
+            <div id="project-summary">
+                <h4><strong>ABOUT</strong><br>
+                    <strong>Duration:</strong> June 2018-Present (Ongoing)<br>
+                    <strong>Role:</strong> Product Designer<br>
+                    <strong>Team:</strong> Developers (3), UX Supervisor, Product Owner<br>
+                    <strong>For:</strong> University's Treasury team<br><br>
+
+                    <strong>SKILLS USED</strong><br>
+                    Information Architecture<br>
+                    Visual Design<br>
+                    Wireframing (using Sketch)<br>
+                    Flowcharting and diagramming<br>
+                    Prototyping (using HTML/CSS and InVision)<br>
+                    User Testing<br></h4>
+            </div>
+        </div><br><br>
+
+        <!--Project Content-->
+        <h2><strong>Initial Observations</strong></h2>
+        <p>Treasury’s legacy processes involve <strong>a ton of manual labor</strong>–querying, filtering, data transfer, math work (they maintain actual formula sheets), and back and forth between applications– to successfully generate a single report or request.<br><br>
+
+            <strong>Specifically, Treasury users view, update, and collect and manage data on Microsoft Access and Excel.</strong></p>
+
+        <img src="../images/project-treasury/formula-sheet.png" class="zoomImages">
+
+        <h3 class="image-caption">A note on keeping/updating formulas manually embedded within one of their spreadsheets</h3><br><br>
+
+        <h2><strong>Goals</strong></h2>
+        <p>1. <strong>To present complex data in a way that is (1) easy to understand and comprehend and (2) easier on the eyes so that users can focus on making decisions central to their workflow </strong>instead of spending so much effort trying to look a piece of information up<br><br>
+
+            2. <strong>To minimize manual data entry </strong>for Treasury users<br><br>
+
+            3. To augment this solutions package with a front end design for <strong>an enhanced user experience</strong><br><br><br><br>
+
+            With these, we defined our design principles for this project.</p><br><br>
+
+        <h2><strong>Design Principles</strong></h2>
+        <h5>1. Designing for data density</h5>
+        Data associated with NYU’s bonds accumulate exponentially over 30 years (a bond’s average lifespan in NYU's portfolio). My approach to designing Treasury Portal involved <strong>breaking down heavily layered data to optimize data capture and absorption.</strong><br><br>
+
+        <h5>2. Automation</h5>
+        Given the unnecessary amount of manual work in the legacy system, I planned for <strong>as many checks and filters to be done on the back end as possible</strong>, while keeping them visible as labels and tags on the front end.<br><br>
+
+        <h5>3. Ease of Use</h5>
+        For users to successfully transition to Treasury Portal with as little cognitive load possible, it was important to keep the design simple and straightforward with intuitive, actionable pieces. In creating <strong>a comfortable, controlled environment</strong>, I hoped to increase the users’ confidence in navigating through the data and executing tasks within Treasury Portal.<br><br><br>
+
+        <h2><strong>Designing the dashboard and menu</strong></h2><br>
+        Learning about each user’s most commonly taken actions helped me define the scope of the system and structure the hierarchy of information within Treasury Portal.
+
+        <img src="../images/project-treasury/ia.png" class="zoomImages">
+
+        <h3 class="image-caption"><em>‘Chunking’ data into levels so that information and functionality are provided only as needed for tasks</em></h3><br><br>
+
+        Mapping out data and functions provided framework for the dashboard and menu designs.
+
+        <img src="../images/project-treasury/dashboard.png" class="zoomImages">
+
+        <h2><strong>Relationships Among Treasury Entities</strong></h2>
+
+        <img src="../images/project-treasury/treasury-entities.png" class="zoomImages">
+
+        To give you a snapshot of how I designed Treasury Portal to combat inefficiencies presented by the legacy system, I will walk you through comparative cases for two business processes that this enterprise system will facilitate: viewing a bond, and generating a reimbursement request.<br><br><br>
+
+        <h2><strong>1. Viewing a Bond</strong></h2>
+        Treasury users identify the bonds to be tracked in the portal. By doing so, Treasury will be able to submit Reimbursement Requests to DASNY and report on private use related to the bond series.
+
+        <h5>Legacy Process: <strong>Microsoft Access database</strong></h5>
+        In the legacy process, Treasury views bond information on this 22-column “Bonds” table on the Microsoft Access database.
+
+        <img src="../images/project-treasury/access.png" alt="Microsoft Access database table with 22 columns" class="zoomImages">
+
+        <h3 class="image-caption"><em>Treasury assesses bond information on this Microsoft Access table</em></h3><br><br>
+
+        <h5>Treasury Portal Process</h5>
+        The <strong>View Bond</strong> user interface holds bond-related data that can be analyzed and manipulated.
+
+        <img src="../images/project-treasury/view-bond.png" class="zoomImages">
+
+        <div class="center">
+            <a class="btn__prototype btnRippleEffect" type="button" href="https://invis.io/RSPI7D7Y5W8" target="_blank">
+                View Prototype
+            </a><br><br><br><br>
+        </div>
+
+        <h2><strong>2. Generating a Reimbursement Request</strong></h2>
+        Capital projects initially paid out of NYU working capital are later reimbursed from bond proceeds by identifying specific invoices and bundling them into a Reimbursement Request that is submitted to the bond’s issuer. The total of all invoices accepted by the issuer is then taken out of the bond and paid to NYU.
+
+        <h5>Legacy Process: <strong>FAME > CPACSWeb > Excel > Export as PDF</strong></h5>
+
+        <img src="../images/project-treasury/rr-legacy.png" class="zoomImages">
+
+        <div class="two-col">
+            <div>
+                <img src="../images/project-treasury/rr-sheet.png" class="zoomImages">
+                <h3 class="image-caption"><em>Treasury assesses bond information on this Microsoft Access table</em></h3><br>
+            </div>
+            <div>
+                <br><br>Treasury’s legacy process is an <strong>intensive manual process</strong>: invoices must be identified from FAME, their location checked in CPACSweb, and if still valid, the invoices are input into an Excel spreadsheet like this one on the left. Reimbursement budgets and requests are maintained in Excel spreadsheets compiled manually.
+            </div>
+        </div>
+
+        <h5>Treasury Portal Process</h5>
+        To minimize manual data entry for Treasury users, much of the development work is “behind the scenes.”<br>
+
+        <img src="../images/project-treasury/treasury-integration.png" class="zoomImages">
+
+        Treasury Portal aims to eliminate manual data collection and entry by integrating with Space Management System (SMS) and Capital Projects Administration and Control System (CPACSweb) to generate data on demand.<br><br>
+
+        In Treasury Portal, users can create a reimbursement request, track the amounts budgeted for each issuer initiative, and trace requests made from each initiative across all reimbursements. Users will be able to easily find invoices eligible for reimbursement and pull their attachments for submission to the bond’s issuer.<br><br>
+
+        <img src="../images/project-treasury/rr-ia.png" class="zoomImages">
+
+        <div class="two-col">
+            <div>
+                <img src="../images/project-treasury/rr-sketch.png" class="zoomImages">
+            </div>
+            <div>
+                <img src="../images/project-treasury/rr-sketch-2.png" class="zoomImages">
+            </div>
+        </div>
+
+        <h3 class="image-caption"><em>My initial sketches for the Reimbursement Request page</em></h3><br><br>
+
+        By default, all payments will be selected and their full amount will be reimbursed. The complete submission packet will be generated by the system as a pdf. This reduces the number of clicks to complete a task.<br><br><br>
+
+        <div class="video-container">
+            <video controls>
+                <source src="../images/project-treasury/tp__before_and_after__55_.mp4" type="video/mp4">
+            </video><br><br><br>
+        </div>
+
+        My team and I decided to design for these business processes first for their relative complexity and robustness, keeping in mind that, moving forward, we can easily reuse components from these pages.<br><br>
+
+        <h2><strong>Implementing Progressive Disclosure</strong></h2>
+        I implemented progressive disclosure heavily throughout my design <strong>to provide information and functionality only as needed for tasks, hiding data from the Treasury user’s view otherwise.</strong>
+
+        <div class="two-col">
+            <div>
+                <img src="../images/project-treasury/view-bond-sketch.png" class="zoomImages">
+                <h3 class="image-caption"><em>Organizing sets of data on a Bond View page</em></h3>
+            </div>
+            <div>
+                <img src="../images/project-treasury/invoices-sketch.png" class="zoomImages">
+                <h3 class="image-caption"><em>Exploring how much data to present at a time</em></h3>
+            </div>
+        </div><br><br>
+
+        This method of managing data density is evident in the modals, popups, mouse-overs, pipeline-layering, and expandable/collapsible menu across Treasury Portal.<br><br>
+
+        <h2><strong>Looking Forward</strong></h2>
+
+        Upon development and deployment, Treasury users will be able to move away from the legacy system and towards this enterprise system with increased capacity and navigability. As a result, they spend less time compiling data from different sources and more time analyzing those data to use bond proceeds as effectively as possible.
+        <br><br><br>
+
+        <br>
+        Thanks for reading,
+        <img src="../images/maxine-sig.png" alt="maxine's signature" id="signature">
+    </div><br><br><br><br>
+
+    <!--Next Project-->
+    <div class="two-col">
+        <div class="container__project-image">
+            <img src="../images/opentable.png" alt="opentable" class="img-project drop-shadow">
+        </div>
+        <div class="container__project-text">
+            <h3 class="open-table-tab-color"><strong>↓ NEXT PROJECT</strong></h3><br>
+            <div class="project__text-title"><div class="open-table-tab-color"><strong>OpenTable Tab</strong></div>&nbsp;
+                    –– Streamlining the social smart-dining experience<br><br></div>
+            <div class="project__text-details">
+                <h3>PROJECT: Weekly Design Challenge</h3>
+                <h3>ROLE: Product Designer, User Researcher</h3>
+                <h3>DURATION: Feb-May 2018</h3><br><br>
+            </div>
+            <a href="../projects/opentable.html" class="view__link view__link-padding">View Project &rarr;</a>
+        </div>
+    </div>
+    <br><br>
+
+        <!--Footer-->
+        <br><br><br><br><br>
+        <footer>
+            <div>
+                © <strong>2018 Maxine Kho</strong>
+            </div>
+            <div class="sm-links">
+                <i class="fab fa-behance"></i>&nbsp;&nbsp;<a class="black" href="https://www.behance.net/maxinekho" target="_blank">Behance</a>
+            </div>
+            <div>
+                <i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;<a class="black" href="https://www.linkedin.com/in/maxinekho/" target="_blank">LinkedIn</a>
+            </div>
+            <div>
+                <i class="fab fa-medium-m"></i>&nbsp;&nbsp;<a class="black" href="https://medium.com/@mck428" target="_blank">Medium</a>
+            </div>
+        </footer>
+    <script src="script.js"></script>
 </body>
 </html>

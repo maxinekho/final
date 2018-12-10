@@ -61,6 +61,7 @@ body {
 .header-intro {
     font-size: medium;
     padding: 0 5em;
+    margin-left: 2.5em;
     /*grid-row-start: 1;*/
     /*grid-column-start: 2;*/
     /*width: 100%;*/
@@ -97,7 +98,24 @@ a.view-project-button:hover {
     /*flex-shrink: 0;*/
 }
 
-/*Link Properties*/
+/*Project Colors*/
+
+.janus-color {
+    color: #692398;
+    display: inline-block;
+}
+
+.treasury-color {
+    color: #109a53;
+    display: inline-block;
+}
+
+.open-table-tab-color {
+    color: #d43644;
+    display: inline-block;
+}
+
+/* "View Project" Link Properties*/
 
 .view__link{
     --smLinkPadding: 10px 15px;
@@ -142,9 +160,12 @@ a.view__link{
     bottom: 0;
 }
 
-.img-project {
-    display: flex;
+img.drop-shadow {
     box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+img.img-project {
+    display: flex;
     max-width: 90%;
 }
 
@@ -162,7 +183,7 @@ a.view__link{
 }
 
 .project__text-title {
-    font-size: 1.2em;
+    font-size: 2em;
     line-height: 1em;
 }
 
@@ -182,14 +203,14 @@ p {
     font-size: 1em;
 }
 
-a.to-blue:hover {
-    color: dodgerblue;
-}
-
 a.black {
     color: #333333;
     text-decoration: none;
     font-size: 1em;
+}
+
+a.black:hover {
+    font-weight: 700;
 }
 
 a.blue {
@@ -210,19 +231,14 @@ a.active-nav {
 /*}*/
 
 a.inactive-nav:hover {
-    /*color: dodgerblue;*/
-    /*background-position: -100% 0;*/
     font-weight: 700;
 }
 
-footer > div{
-    display: inline-flex;
-    /*flex-direction: column;*/
-    font-size: 0.7em;
-    justify-content: space-around;
+footer > div {
+    display: inline-block;
     justify-items: center;
-    margin-bottom: 30px;
-    padding-right: 70px;
+    margin-bottom: 3em;
+    padding-right: 3em;
 }
 
 @media (max-width: 800px) {
@@ -247,6 +263,11 @@ footer > div{
         max-width: 7em;
         border-radius: 50%;
     }
+
+    h1 {
+        font-size: 4em;
+    }
+
     .header-intro {
         /*width: 100%;*/
         margin: 0;
@@ -272,12 +293,18 @@ footer > div{
         display: flex;
         /*align-items: center;*/
         width: 70%;
-        font-size: 1em;
+        font-size: 0.7em;
+        margin-left: 3em;
     }
 
     .container__project-image {
         padding: 0 1em;
+        margin-left: 1em;
         max-width: 90%;
+    }
+
+    footer {
+        padding: 0 1em;
     }
 
     footer.sm-links {

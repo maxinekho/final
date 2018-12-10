@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/shrimp.ico" type="img/ico">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="style-project.css">
+
+    <title>MAXINE KHO | OpenTable Tab</title>
+</head>
+<body>
+    <!--Logo-->
+    <div class="logo">
+        <a class="black" href="/">Maxine Kho</a>
+    </div>
+
+    <!--Navigation-->
+    <nav class="top-nav">
+        <a class="black inactive-nav" href="../index.html">MAXINE KHO</a>
+        <a class="black inactive-nav" href="../cv/cv.html" target="_blank">RESUME</a>
+        <a class="black inactive-nav" href="mailto:maxinekho@nyu.edu">CONTACT</a>
+    </nav>
+    <br><br><br><br><br>
+
+    <!--Progress Bar-->
+    <div class="progress-indicator">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="zoomModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
+    <!--Title + Content-->
+    <div class="container">
+        <h1><strong>Streamlining the Social Smart-Dining Experience 🍾</strong></h1>
+        <br>
+        <!--Project Intro + Summary-->
+        <div class="two-col">
+            <!--Project Intro-->
+            <div class="intro">
+                <h2>A weekly-output-based design challenge</h2>
+                <p>My social life revolves largely around dining out. I revel in the joys of sharing food and the bond it creates.<br><br>
+                    My everlasting love affair with food makes me all the more wary of the quality of the current social dining experience, from discovering about new restaurants to sharing our dining experience with others after.</p><br><br>
+            </div>
+
+            <!--Project Summary-->
+            <div id="project-summary">
+                <br><h4><strong>ABOUT</strong><br>
+                    My first dive into a mobile app redesign
+                    <strong>Duration:</strong> February-May 2018<br>
+                    <strong>Role:</strong> Product Designer, User Researcher<br>
+                    <strong>For:</strong> People who love to share meals out with friends, family, and colleagues<br><br>
+
+                    <strong>SKILLS USED</strong><br>
+                    User interviews<br>
+                    User Personas<br>
+                    User Journey Mapping<br>
+                    Competitive Analysis<br>
+                    App Critique<br>
+                    Wireframing (using Sketch)<br>
+                    Flowcharting and diagramming<br>
+                    Prototyping (using InVision)</h4>
+                </div>
+        </div>
+
+        <!--Project Content-->
+        <h2><strong>Observations</strong></h2>
+        If there is one thing that I <p class="highlight-open-table">dread </p>about dining out, specifically with friends or colleagues, it is noticing (every. single. time.) the excessive amount of time and effort spent taking care of the latter part of the social dining experience–requesting for the check during peak hours, devising a plan for splitting the total bill, and enduring the back-and-forth with the staff about payment policies and processing restrictions, to mention a few.<br><br>
+            In thirteen weeks, I put in the effort to understand what New Yorkers think of the current payment process in restaurants to find out they too get a similar feeling of dread from it. <strong>From there, I redesigned the dine-in payment flow to enable restaurateurs running their businesses and enhance the overall dining experience for their diners.</strong><br><br>
+
+        <h2><strong>User Research</strong></h2>
+        <p>Due to the time constraint, I conducted a survey remotely to learn more about the collective dining experiences of 10 people of ages 18–24 currently living in New York.<br></p>
+        <img src="../images/project-opentable/survey.png" class="zoomImages"><br><br>
+
+        <h5><strong>1. Dining-out Frequency</strong></h5>
+        Based on the responses gathered, I found that sample group comprises <p class="highlight-open-table"> frequent diners– with 90% of the pool eating 2 to 5 times a week, on average.</p>
+
+        <img src="../images/project-opentable/frequency.png" class="zoomImages">
+
+        <p class="highlight-open-table">9 out of the 10 respondents</p> frequently dine out with their friends or colleagues.
+        <img src="../images/project-opentable/frequency-2.png" class="zoomImages">
+        <h3 class="image-caption"><em>NOTE 5 for Frequently and 1 for Rarely</em></h3><br><br>
+
+        <h5><strong>2. Preferred Payment Method</strong></h5>
+        <img src="../images/project-opentable/payment.png" class="zoomImages">
+        •  <p class="highlight-open-table"> 7 out of 10 preferred splitting the total check according to individual and/or shared orders.</p> 1 of the 7 also checked the box for “We don’t split the check. It’s my or someone else’s treat!”<br><br>
+
+        •  <p class="highlight-open-table">2 out of 10 preferred splitting the total check evenly.</p><br><br>
+
+        •  1 of them described how <em>“One person puts down a single card to make it easy for the waiter. Then we Venmo each other for our portions later.”</em><br><br>
+
+        Additionally, all the respondents use Venmo to facilitate payments. When given the choice to pay with cash or credit/debit cards, all ten chose the latter as their preferred method of payment.<br><br>
+
+        <h5><strong>3. Making Reservations</strong></h5>
+        <img src="../images/project-opentable/reserve.png" class="zoomImages">
+        <p class="highlight-open-table">Overall, OpenTable was the most popular booking tool</p> (Other choices: Resy, Yelp, making phone calls, through restaurant’s website, physically inquiring)
+
+        <h5><strong>4. "How can your dining experience be improved?”</strong></h5><br>
+        <em>“Settling payments to the restaurant <p class="highlight-open-table"> through an application”</p><br><br>
+
+        <p class="highlight-open-table">“Automatic bill-splitting”</p><br><br>
+
+        “Having machines/iPads for menus so <p class="highlight-open-table">ordering process can be streamlined & staff interaction will be lessened”</p><br><br>
+
+        “More <p class="highlight-open-table">automation</p>, less waiting”<br><br>
+
+        “I wish restaurants had <p class="highlight-open-table">POS systems</p> that rang in orders by person instead of by table and then could easily print and <p class="highlight-open-table">charge on a per person basis instead of splitting up an itemized bill by hand</p> because I know that is time consuming/hard for server.”<br><br>
+
+            “<p class="highlight-open-table">If the check can be separated from the beginning instead</p>, so we don’t have to try to tell the waiter who got what and so forth.”</em><br><br>
+
+        This information gave me a clearer view into millennial New Yorkers’ dining habits and expectations. Drawing out user journey maps will enable me to supplement my background research with more holistic profiles for potential users.<br><br><br>
+
+        <h2><strong>User Journey Maps</strong></h2>
+        <img src="../images/project-opentable/user-journey-1.png" class="zoomImages">
+        <img src="../images/project-opentable/omar_journey.png" class="zoomImages">
+        <img src="../images/project-opentable/indira_journey.png" class="zoomImages">
+
+        <h5><strong>Insights</strong></h5>
+        • Most diners access booking tools and coordinate plans with friends or colleagues on their mobile phones.<br><br>
+
+        • Users become anxious when dining in a group especially if they have a tight budget or are avoiding an overdraft.<br><br>
+
+        • Not all bill splitting methods (split evenly, per individual and shared orders, etc) are allowed at establishments.<br><br>
+
+        • The disconnect between the restaurant and its diners, especially in notifying diners of acceptable payment and splitting methods and the act of bill splitting, itself, ruins the overall dining experience for most diners.<br><br>
+
+        <h2><strong>Users & Their Goals</strong></h2>
+        How might we streamline the social smart-dining experience?<br><br>
+        Identifying users and combining all their goals was necessary in designing an inclusive, holistic experience.<br>
+        <img src="../images/project-opentable/users.png" class="zoomImages">
+        <img src="../images/project-opentable/user_goals.png" class="zoomImages">
+
+        <h2><strong>User Flow</strong></h2>
+        <img src="../images/project-opentable/flowchart.png" class="zoomImages">
+        <h3 class="image-caption"><em>Mapping out the ideal overall dining experience with the app</em></h3><br><br>
+
+        Upon laying out the user experience flow, I noticed that fundamental features (such as making a reservation, discover/search, confirming attendance, payments, etc) have already been implemented and nearly perfected by apps (mainly by OpenTable).<br><br>
+
+        Below is a version of the flowchart that with red dots that mark certain components already made available to diners via OpenTable:
+
+        <img src="../images/project-opentable/flowchart+copy.png" class="zoomImages">
+        <h3 class="image-caption"><em>Red dots mark the steps already made available in the OpenTable mobile app</em></h3><br><br>
+
+        <h2><strong>Rethinking the Solution</strong></h2>
+        <h5>My initial plan of <p class="highlight-open-table">designing and building a booking app from scratch no longer seems feasible</p> for the following reasons:</h5>
+
+        1. Many diners are already familiar with OpenTable, among other booking apps. The <p class="highlight-open-table">
+        high effort and time-based switching costs</p> will discourage OpenTable users from switching to a new brand and booking tool.<br><br>
+
+        2. Another option would be to create an app purely for custom bill splitting; however, the <p class="highlight-open-table">
+        back and forth between booking apps and services</p> targeting only certain components of the dining experience is not only tedious but <p class="highlight-open-table">counterintuitive</p> as well. Instead of enhancing the overall dining experience, the flow becomes disconnected if diners have to jump from one app to another.<br><br>
+
+        Since, based on the user research, a large pool of millennial diners in New York are already on OpenTable, <strong>why not redesign the experience (and the app) to accommodate (1) a walk-in option (and access to waitlist) via enabled location services, (2) an interactive in-app menu, and (3) an option for customized bill splitting?</strong><br><br>
+
+        <h2><strong>Sketches: Introducing New Touchpoints</strong></h2>
+
+        <h3 class="image-caption"><em>Note All sketches and designs are based on the OpenTable app’s version (Ver.11.11.0) as of March 1, 2018.</em></h3>
+
+        I started sketching screens from the splash page and through the check-in touchpoint. I put interfaces (both current and envisioned) in pencil and paper to, at a minimal level, simulate actions users will take to accomplish their goal. Linking screens and integrating new “solution screens” to the current interface system will help me explore the feasibility and efficiency of the solutions I have come up with so far.<br><br>
+
+        <h5>Touchpoint A: <strong>Walk-in Feature</strong></h5>
+
+        <img src="../images/project-opentable/walkin_solutions_sketch_broad.png" class="zoomImages">
+        <h3 class="image-caption"><em>Anticipated user flow with a broad overview of proposed touchpoint solutions</em></h3>
+
+        <img src="../images/project-opentable/checkin_solution_1.png" class="zoomImages">
+        <img src="../images/project-opentable/checkin_solution_2.png" class="zoomImages">
+        <img src="../images/project-opentable/checkin_solution_3.png" class="zoomImages">
+
+        <h5>Touchpoint B: <strong>Enabling in-app Orders</strong></h5>
+
+        <img src="../images/project-opentable/walkin_solutions_sketch_broad.png" class="zoomImages">
+        <h3 class="image-caption"><em>Anticipated user flow with a broad overview of proposed touchpoint solutions</em></h3>
+
+        <img src="../images/project-opentable/order_flow.png" class="zoomImages">
+        <img src="../images/project-opentable/view_solution_1.png" class="zoomImages">
+        <img src="../images/project-opentable/view_solution_2.png" class="zoomImages">
+
+        During my recent trip to LA, I found out about OpenTable’s Tab, an in-app feature that eliminates the back-and-forth of cash or credit cards between the staff and the diner/s.
+
+        <img src="../images/project-opentable/app.png" class="zoomImages">
+
+        Although Tab offers the convenience of paying through phone, it still does not provide options for bill splitting (which remains to be the pain point for many diners). For this reason, I pursued designing this touchpoint while integrating the current user interface system of OpenTable Tab.<br><br>
+
+        But before I dove into the nitty gritty of the third and final touchpoint, I wanted to study OpenTable Tab further.<br>
+
+        <img src="../images/project-opentable/web-app.png" class="zoomImages">
+
+        <h3 class="image-caption"><em>The only restaurants on OpenTable Tab in the whole of New York.</em></h3><br><br>
+
+        Tab was piloted in June 2016, but as of today, there are only two restaurants in New York that are actually on OpenTable Tab– Big Daddy’s and Duke’s.<br><br>
+
+        It’s been almost two years since the Priceline Group (PCLN) piloted OpenTable Tab and I have two questions in mind:<br><br>
+
+        <h5><em>Why did I (and many others) not know about OpenTable Tab until recently?<br><br>
+            Why aren’t more restaurants utilizing this feature for benefits like rapid turnover, increased security and trust, and a decrease in customer complaints that emerge from traditional payment processes?</em></h5>
+
+        Are diners simply not prepared for this no-contact payment system?<br><br>
+
+        I didn’t think so– at least not for all millennial diners. Based on the user surveys, it seemed like millennial diners are more than prepared (and, in fact, even demand) an automated, in-app payment process.<br><br>
+
+        We can look to the app’s current user experience to find the reason/s for the low penetration of Tab:<br><br>
+
+        <h2><strong>Feature Critique</strong></h2>
+        <img src="../images/project-opentable/download.png" class="zoomImages">
+        A list of restaurants participating in OpenTable Tab cannot be easily accessed from the landing page of the mobile app because <p class="highlight-open-table">the “Pay with Mobile” card is positioned lower in order.</p> The Tab logo also does not stand out among the cards.<br><br>
+
+
+
+
+        <div class="center">
+            <a class="btn__prototype btnRippleEffect" type="button" href="https://projects.invisionapp.com/share/DGGOCCJ358R#/screens" target="_blank">
+                View Prototype
+            </a><br><br><br><br>
+        </div>
+
+
+
+        <video>
+
+        </video><br><br>
+
+        <br><br><br>
+
+        <br>
+        Thanks for reading,
+        <img src="../images/maxine-sig.png" alt="maxine's signature" id="signature">
+    </div><br><br><br><br>
+
+    <!--Next Project-->
+    <div class="two-col">
+        <div class="container__project-image">
+            <img src="../images/janus@2x.png" alt="janus" class="img-project drop-shadow">
+        </div>
+        <div class="container__project-text">
+            <h3 class="janus-color"><strong>↓ NEXT PROJECT</strong></h3><br>
+            <div class="project__text-title"><div class="janus-color"><strong>Janus</strong></div>&nbsp;
+                –– Simplifying a labor-intensive hiring process<br><br></div>
+            <div class="project__text-details">
+                <h3>PROJECT: NYU IT</h3>
+                <h3>ROLE: Product Designer</h3>
+                <h3>DURATION: February 2018-Present</h3><br><br>
+            </div>
+            <a href="../projects/janus.html" class="view__link view__link-padding">View Project &rarr;</a>
+        </div>
+    </div>
+    <br><br>
+
+    <!--Footer-->
+    <br><br><br><br><br>
+    <footer>
+        <div>
+            © <strong>2018 Maxine Kho</strong>
+        </div>
+        <div class="sm-links">
+            <i class="fab fa-behance"></i>&nbsp;&nbsp;<a class="black" href="https://www.behance.net/maxinekho" target="_blank">Behance</a>
+        </div>
+        <div>
+            <i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;<a class="black" href="https://www.linkedin.com/in/maxinekho/" target="_blank">LinkedIn</a>
+        </div>
+        <div>
+            <i class="fab fa-medium-m"></i>&nbsp;&nbsp;<a class="black" href="https://medium.com/@mck428" target="_blank">Medium</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
