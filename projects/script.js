@@ -1,6 +1,5 @@
-// Progress Bar
+//Progress Bar
 window.onscroll = function() {addProgress()};
-
 function addProgress() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -8,9 +7,8 @@ function addProgress() {
     document.getElementById("progressBar").style.width = scrolled + "%";
 }
 
-// Button Ripple Effect
-const rippleElements = document.getElementsByClassName("btnRippleEffect");
-
+// Button Ripple
+let rippleElements = document.getElementsByClassName("btnRippleEffect");
 for(let i = 0; i < rippleElements.length; i++) {
     rippleElements[i].onclick = function(e) {
         let X = e.pageX - this.offsetLeft;
