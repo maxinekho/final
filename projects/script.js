@@ -1,12 +1,3 @@
-//Progress Bar
-window.onscroll = function() {addProgress()};
-function addProgress() {
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrolled = (winScroll / height) * 100;
-    document.getElementById("progressBar").style.width = scrolled + "%";
-}
-
 // Button Ripple
 let rippleElements = document.getElementsByClassName("btnRippleEffect");
 for(let i = 0; i < rippleElements.length; i++) {
@@ -33,7 +24,6 @@ let captionText = document.getElementById("caption");
 // Go through all of the images with class zoomImages
 for (let i = 0; i < images.length; i++) {
     let img = images[i];
-    console.log('working!');
     img.onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
@@ -41,25 +31,7 @@ for (let i = 0; i < images.length; i++) {
     }
 }
 
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-};
-
-// Back to Top Link
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {userScroll()};
-
-function userScroll() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("backToTop").style.display = "block";
-    } else {
-        document.getElementById("backToTop").style.display = "none";
-    }
-}
 
 // When the user clicks on the button, scroll to the top of the document
 function scrollUp() {
